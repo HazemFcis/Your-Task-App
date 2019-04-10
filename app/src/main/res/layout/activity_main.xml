@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/backdesign"
+    tools:context=".MainActivity">
+     
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:textColor="#fff"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:gravity="center"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Email"
+                android:textColorHint="#fff"
+                android:id="@+id/ed_login_email"
+                android:background="@drawable/editdesign"
+                android:padding="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Password"
+                android:textColorHint="#fff"
+                android:id="@+id/ed_login_Password"
+                android:inputType="textPassword"
+                android:background="@drawable/editdesign"
+                android:padding="10dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOG IN"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_margin="10dp"
+                android:id="@+id/bt_login"
+                android:background="@drawable/editdesign"
+                android:padding="10dp"
+                android:textColor="#fff"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="Dont have account ? Sign Up Here"
+                android:id="@+id/tv_signup"
+                android:textColor="#fff"
+                android:textAppearance="?android:textAppearanceSmall"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
